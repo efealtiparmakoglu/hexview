@@ -1,0 +1,6 @@
+hexview
+unit
+*.o
+tests/tmp/
+bench-out/
+.DS_Store
