@@ -1,5 +1,5 @@
 CC      ?= cc
-CFLAGS  ?= -O2 -std=c11 -Wall -Wextra -Wpedantic -D_FILE_OFFSET_BITS=64
+CFLAGS  ?= -O2 -std=c11 -Wall -Wextra -Wpedantic -D_FILE_OFFSET_BITS=64 -D_POSIX_C_SOURCE=200809L
 LDFLAGS ?=
 PREFIX  ?= /usr/local
 DESTDIR ?=
