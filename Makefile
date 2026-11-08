@@ -27,7 +27,7 @@ test: hexview unit
 # Same suite under AddressSanitizer + UBSan.
 test-asan:
 	$(MAKE) clean
-	$(MAKE) CFLAGS="-O1 -g -std=c11 -Wall -Wextra -Wpedantic -D_FILE_OFFSET_BITS=64 -fsanitize=address,undefined -fno-omit-frame-pointer" test
+	$(MAKE) CFLAGS="-O1 -g -std=c11 -Wall -Wextra -Wpedantic -D_FILE_OFFSET_BITS=64 -D_POSIX_C_SOURCE=200809L -fsanitize=address,undefined -fno-omit-frame-pointer" test
 	$(MAKE) clean
 	$(MAKE)
 
